@@ -12,7 +12,7 @@ var table = MachinePoker.create({
 });
 
 // Source be found at: https://github.com/mdp/RandBot
-var remotePlayerUrl = "http://randbot.herokuapp.com/randBot";
+var remotePlayerUrl = "http://localhost:5000/randBot";
 
 var remotePlayer = RemoteSeat.create(remotePlayerUrl);
 remotePlayer.on('ready', function () {

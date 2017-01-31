@@ -2,7 +2,7 @@ assert = require 'assert'
 Bot = require '../src/seats/remote'
 
 fakeGame = require("./fixtures/game_data.json")
-url = "http://randbot.herokuapp.com/randBot"
+url = "http://localhost:5000/randBot"
 
 describe "Basic remote run bot", ->
   @timeout 10000
