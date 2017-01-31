@@ -45,7 +45,7 @@ Check [this guide on the wiki](https://github.com/mdp/MachinePoker/wiki) to star
 
 New matches are built using the Machine Poker API
 
-    var MachinePoker = require('machine-poker');
+    var MachinePoker = require('machine-poker')
         , LocalSeat = MachinePoker.seats.JsLocal
         , RemoteSeat = MachinePoker.seats.Remote
         , CallBot = require('./examples/bots/callBot')
