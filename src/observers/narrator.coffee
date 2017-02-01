@@ -26,7 +26,10 @@ playerInfoString = (player, communityCards) ->
       c = c.concat(playerCards)
       handName = Hand.make(c).name
       if handName? and handName != 'High card' then playerCards += " (#{handName})"
-  return "#{player.name} ($#{player.chips}) #{playerCards}"
+  str = "#{player.name} ($#{player.chips})"
+  if player.name == "HumanBot"
+    str += " #{playerCards}"
+  return str
 
 actionString = (action, bet) ->
   switch action
